@@ -1,0 +1,255 @@
+div {
+  text-align: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+@media only screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 100%; }
+  nav {
+    width: 100%;
+    flex-wrap: wrap; } }
+
+@media only screen and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 150%;
+    background-color: antiquewhite; }
+  nav {
+    flex-wrap: nowrap;
+    display: inline-block; } }
+
+.cabecera {
+  padding: 50px;
+  background-color: #25245D;
+  font-family: "Questrial";
+  text-align: center;
+  text-decoration: none;
+  color: white; }
+
+.cabecera a:visited {
+  text-decoration: none;
+  color: white; }
+
+nav {
+  background-color: #5E1E5D;
+  font-family: "Raleway";
+  height: 40px;
+  text-align: center;
+  border-color: #1A5678; }
+
+nav li {
+  padding: 5px 50px;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  align-content: space-between;
+  color: white; }
+
+nav li:hover {
+  background-color: #1A5678;
+  text-decoration: none;
+  color: white; }
+
+nav li a:link, a:visited, a:focus {
+  text-decoration: none;
+  color: white; }
+
+#aparte {
+  display: flex;
+  padding: 5px 10px 5px 10px;
+  font-family: "Roboto";
+  background-color: #F8D092;
+  flex-direction: row;
+  text-align: justify;
+  height: 700px;
+  align-items: flex-start; }
+
+#aparte aside {
+  padding: 20px 10px 10px 5px;
+  text-align: justify;
+  background-color: #159097;
+  flex: 5px;
+  margin: 2px;
+  height: 650px; }
+
+#aparte #lecturasRecomendadas {
+  flex: 200px;
+  padding: 20px 10px 5px 10px;
+  list-style-position: inside; }
+
+#aparte #cancionDelMes {
+  flex: 300px;
+  padding: 20px 10px 5px 10px;
+  background-image: url(images/nota-musical.png);
+  background-repeat: repeat;
+  height: 650px;
+  border-style: groove;
+  border-color: #159097; }
+
+#libro {
+  padding: 10px 10px 10px 10px;
+  height: 500px; }
+
+h2 {
+  font-family: "Raleway";
+  padding: 5px; }
+
+h3 {
+  font-family: "Raleway";
+  padding: 7px;
+  text-align: left;
+  font-weight: bold;
+  text-align: center; }
+
+h4 {
+  font-family: "Raleway";
+  padding: 8px;
+  background-color: #159097;
+  border-style: dotted; }
+
+p {
+  font-family: "Roboto";
+  padding: 9px; }
+
+.divBase {
+  background-color: #F8D092; }
+
+.seccionesLiteratura {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 0px 5px 0px;
+  align-content: space-evenly; }
+
+.seccionesLiteratura div {
+  padding: 10px;
+  background-color: #159097; }
+
+#palabras {
+  background-color: #F8D092;
+  text-align: justify;
+  transition: all 2s;
+  width: 35%; }
+
+#palabras:hover {
+  background-color: #f8af42; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: 2fr 0.5fr;
+  margin: 30px 30px 30px 30px;
+  grid-template-areas: 'pintura escultura ceramica'
+ 'tema tema tema';
+  border: 1px solid;
+  font-family: "Raleway";
+  background-color: #F8D092;
+  padding: 10px 15px 10px 15px;
+  justify-content: space-evenly;
+  align-content: start; }
+
+.pintura {
+  grid-area: "pintura";
+  align-self: start; }
+
+.escultura {
+  grid-area: "escultura";
+  align-self: start; }
+
+.ceramica {
+  grid-area: "ceramica";
+  align-self: start; }
+
+.tema {
+  grid-area: "tema";
+  grid-column: 1/4;
+  text-align: justify;
+  align-self: center; }
+
+.carteleraAlumnos {
+  background-image: radial-gradient(#159097, #1A5678);
+  height: 200%;
+  margin: 20px 20px 20px 20px;
+  padding: 5px 5px 5px 5px; }
+
+th {
+  font-family: "Roboto";
+  color: #55413f;
+  word-spacing: 3px;
+  padding: 2px;
+  background-color: #159097; }
+
+#tematica {
+  font-weight: bold; }
+
+#listaRazones {
+  list-style-position: inside; }
+
+#interes ul {
+  list-style-position: inside; }
+
+#cuadroPaginasUtiles {
+  margin: 10px 50px 10px 50px;
+  background-color: #F8D092;
+  padding: 10px 70px; }
+
+#cuadroPaginasUtiles:hover {
+  transform: skewY(1deg); }
+
+h1 {
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#carouselExampleControls {
+  height: 300px; }
+
+#botonEnviar {
+  background: #3b3b3b;
+  font-family: "Raleway"; }
+
+.narrativa-icon {
+  background-image: url("../images/narrativa.jpg"); }
+
+.teatro-icon {
+  background-image: url("../images/teatro.jpg"); }
+
+.poesia-icon {
+  background-image: url("../images/poesia.jpg"); }
+
+.titulosObras, .titulosLiteratura {
+  background-color: white;
+  border: none; }
+
+.titulosLiteratura {
+  text-align: center;
+  border-style: groove;
+  border-color: #f8af42;
+  color: #159097;
+  font-weight: bolder; }
+
+.seccionesIndex {
+  background-color: white; 
+}
+  .volver {
+    background-color: #159097;
+    color:black;
+    padding: 5px;
+}
+.volver:hover {
+  text-decoration: none;
+  text-transform: none;
+}
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
